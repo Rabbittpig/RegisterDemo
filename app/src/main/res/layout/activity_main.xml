@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="手机号: "/>
+        <EditText
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:hint="请输入手机号码"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:background="#BDB4B4"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="密码: "/>
+        <EditText
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:hint="请输入密码"
+            android:inputType="numberPassword"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:background="#BDB4B4"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="请再次输入密码: "/>
+        <EditText
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:hint="再次输入密码"
+            android:inputType="numberPassword"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:background="#BDB4B4"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="校验码: "/>
+        <EditText
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:hint="请输入校验码"
+            android:inputType="numberPassword"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:src="@drawable/verify"/>
+    </LinearLayout>
+    <View
+        android:background="#BDB4B4"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="我已同意《使用协议》"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="#ff3300"/>
+
+</LinearLayout>
